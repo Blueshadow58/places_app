@@ -7,18 +7,8 @@ class ProfileTrips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: [
-        ListView(
-          children: const [
-            // DescriptionPlace(
-            //   "Bahamas",
-            //   3.5,
-            //   description,
-            // ),
-            // ReviewList(),
-          ],
-        ),
-        const HeaderAppBar(),
+      children: const [
+        HeaderAppBar(),
       ],
     );
   }

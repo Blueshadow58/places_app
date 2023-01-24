@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './card_image_list.dart';
+import './menu_icons.dart';
 import './gradient_back.dart';
 import './user_img_info.dart';
 
@@ -14,7 +16,9 @@ class HeaderAppBar extends StatelessWidget {
           'https://xsgames.co/randomusers/assets/avatars/male/1.jpg',
           'Franco Gamonal',
           'gamonalfranco@gmail.com',
-        )
+        ),
+        ManuIcons(),
+        CardImageList(),
       ],
     );
   }
