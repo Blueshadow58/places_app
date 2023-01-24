@@ -6,9 +6,10 @@ class Rating extends StatelessWidget {
   final bool margin;
   @override
   Widget build(BuildContext context) {
+    double deviceHeight = MediaQuery.of(context).size.height * 0.42;
     // if margin is true, add margin to the icon else don't add margin
     final addMargin =
-        margin ? const EdgeInsets.only(top: 323.0, right: 3.0) : null;
+        margin ? EdgeInsets.only(top: deviceHeight, right: 3.0) : null;
     //reduce the size of the icon by 20% if margin is false
     final iconSize = margin ? 25.0 : 20.0;
 

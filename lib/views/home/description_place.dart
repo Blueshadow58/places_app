@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'rating.dart';
-import 'button_purple.dart';
+import '../../widgets/rating.dart';
+import '../../widgets/button_purple.dart';
 
 // create a class that extends the StatelessWidget
 // and override the build method
@@ -13,10 +13,11 @@ class DescriptionPlace extends StatelessWidget {
   final double stars;
   @override
   Widget build(BuildContext context) {
+    double deviceHeight = MediaQuery.of(context).size.height * 0.41;
     final titleStars = Row(
       children: [
         Container(
-          margin: const EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
+          margin: EdgeInsets.only(top: deviceHeight, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
             style: const TextStyle(

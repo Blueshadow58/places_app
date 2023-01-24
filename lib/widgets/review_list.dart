@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:places_app/review.dart';
+import 'package:places_app/widgets/review.dart';
 
 class ReviewList extends StatelessWidget {
   const ReviewList({super.key});

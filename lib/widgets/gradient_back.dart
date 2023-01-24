@@ -25,13 +25,26 @@ class GradientBack extends StatelessWidget {
         ),
       ),
       alignment: const Alignment(-0.9, -0.6),
-      child: Text(
-        title,
-        style: const TextStyle(
-          color: Colors.white,
-          fontSize: 30.0,
-          fontFamily: "Lato",
-          fontWeight: FontWeight.bold,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+                fontFamily: "Lato",
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Icon(
+              // config setting icon
+              Icons.settings,
+              color: Colors.white,
+            )
+          ],
         ),
       ),
     );

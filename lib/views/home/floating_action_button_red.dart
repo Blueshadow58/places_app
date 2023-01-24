@@ -16,13 +16,18 @@ class _FloatingActionButtonRedState extends State<FloatingActionButtonRed> {
       pressed = !pressed;
     });
 
-    ScaffoldMessenger.of(context).showSnackBar(
+    // Save context of Scaffold to manipulate it
+    final contextScalffold = ScaffoldMessenger.of(context);
+    // Remove the current snackbar if it is showing to show the new one
+    contextScalffold.removeCurrentSnackBar();
+
+    contextScalffold.showSnackBar(
       SnackBar(
         duration: const Duration(milliseconds: 1000),
         content: pressed
             ? const Text("Agregaste a tus favoritos")
             : const Text("Eliminaste de tus favoritos"),
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue[900],
       ),
     );
   }
